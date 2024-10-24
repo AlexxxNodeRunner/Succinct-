@@ -54,7 +54,7 @@
 
 ```cd fibonacci/script```
 
-**Запускаем ноду**
+**Запускаем ноду** (придется подождать 10-15 минут)
 
 ```RUST_LOG=info cargo run --release -- --execute```
 
