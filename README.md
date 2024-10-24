@@ -50,7 +50,7 @@
 
 **Создаем новый проект fibonacci с использованием cargo и переходим в директорию fibonacci/script**
 
-```cargo prove new fibonacci```
+```cargo prove new fibonacci --bare```
 
 ```cd fibonacci/script```
 
