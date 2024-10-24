@@ -5,7 +5,7 @@
 
 **Обновляем пакеты на сервере:**
 
-```sudo apt update && sudo apt upgrade -y```
+``sudo apt update && sudo apt upgrade -y``
 
 ```sudo apt install cmake pkg-config libssl-dev build-essential -y```
 
@@ -57,5 +57,8 @@
 **Запускаем ноду**
 
 ```RUST_LOG=info cargo run --release -- --execute```
+
+<img width="970" alt="Снимок экрана 2024-10-24 в 18 51 32" src="https://github.com/user-attachments/assets/c6a36e64-5993-4b91-a07a-2426f9a54f51">
+
 
 ```RUST_LOG=info cargo run --release -- --prove```
