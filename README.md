@@ -61,4 +61,8 @@
 <img width="970" alt="Снимок экрана 2024-10-24 в 18 51 32" src="https://github.com/user-attachments/assets/c6a36e64-5993-4b91-a07a-2426f9a54f51">
 
 
-```RUST_LOG=info cargo run --release -- --prove```
+```RUST_LOG=info cargo run --release -- --prove``` Ждем до окончания установки ноды
+<img width="1041" alt="Снимок экрана 2024-10-24 в 18 58 43" src="https://github.com/user-attachments/assets/6233f215-7905-48f4-b396-8e3bb1c9a08d">
+
+
+
