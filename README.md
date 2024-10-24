@@ -1,38 +1,59 @@
 # Гайд на ноду Succinct
 
-Обновляем пакеты на сервере:
+![header-1](https://github.com/user-attachments/assets/c05850d5-2fd3-4b11-9fc9-8f7ce35dbb2b)
+
+
+**Обновляем пакеты на сервере:**
+
 ```sudo apt update && sudo apt upgrade -y```
+
 ```sudo apt install cmake pkg-config libssl-dev build-essential -y```
 
-Устанавливаем Rust и Cargo Installation
+**Устанавливаем Rust и Cargo**
 
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
+
 ```source $HOME/.cargo/env```
 
-Скачиваем докер 
+**Скачиваем докер**
+
 ```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg```
+
 ```echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | ```
+
 ```sudo tee /etc/apt/sources.list.d/docker.list > /dev/null```
+
 ```sudo apt-get update >/dev/null 2>&1```
+
 ```sudo apt-get install -y docker-ce docker-ce-cli containerd.io >/dev/null 2>&1```
+
 ```sudo docker run hello-world >/dev/null 2>&1```
 
-Проверяем версию докера
+
+**Проверяем версию докера**
+
 ```docker --version```
 
-Приступим к установке ноды
+**Приступим к установке ноды**
 
 ```curl -L https://sp1.succinct.xyz | bash```
+
 ```source ~/.bashrc```
+
 ```sp1up```
 
-Проверяем, установился ли succinct
+**Проверяем, установился ли succinct**
+
 ```cargo +succinct --version```
 
-Создаем новый проект fibonacci с использованием cargo и переходим в директорию fibonacci/script
+**Создаем новый проект fibonacci с использованием cargo и переходим в директорию fibonacci/script**
+
 ```cargo prove new fibonacci```
+
 ```cd fibonacci/script```
 
-Запускаем ноду 
+**Запускаем ноду**
+
 ```RUST_LOG=info cargo run --release -- --execute```
+
 ```RUST_LOG=info cargo run --release -- --prove```
