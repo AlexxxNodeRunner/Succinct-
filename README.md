@@ -41,6 +41,8 @@
 ```source ~/.bashrc```
 
 ```sp1up```
+<img width="1130" alt="Снимок экрана 2024-10-24 в 18 32 53" src="https://github.com/user-attachments/assets/e00dbf16-0611-4770-8c63-ab6a74529c76">
+
 
 **Проверяем, установился ли succinct**
 
